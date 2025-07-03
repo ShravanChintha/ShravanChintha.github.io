@@ -321,7 +321,7 @@ h1, h2, h3, h4, h5, h6 {
 .skill-items {
     display: flex;
     flex-wrap: wrap;
-    gap: 0.5rem;
+    gap: 1rem;
 }
 
 .skill-item {
@@ -331,6 +331,43 @@ h1, h2, h3, h4, h5, h6 {
     border-radius: 20px;
     font-size: 0.9rem;
     font-weight: 500;
+}
+
+.skill-item-icon {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+    background: white;
+    padding: 1rem;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+    min-width: 80px;
+    text-align: center;
+}
+
+.skill-item-icon:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+}
+
+.skill-item-icon i {
+    font-size: 2rem;
+    color: #667eea;
+}
+
+.skill-logo {
+    width: 32px;
+    height: 32px;
+    object-fit: contain;
+}
+
+.skill-item-icon span {
+    font-size: 0.8rem;
+    font-weight: 500;
+    color: #333;
+    text-align: center;
 }
 
 /* Experience Section */
@@ -781,6 +818,28 @@ h1, h2, h3, h4, h5, h6 {
 
     .skills-grid {
         grid-template-columns: 1fr;
+    }
+
+    .skill-items {
+        justify-content: center;
+    }
+
+    .skill-item-icon {
+        min-width: 70px;
+        padding: 0.8rem;
+    }
+
+    .skill-item-icon i {
+        font-size: 1.5rem;
+    }
+
+    .skill-logo {
+        width: 24px;
+        height: 24px;
+    }
+
+    .skill-item-icon span {
+        font-size: 0.7rem;
     }
 
     .timeline::before {

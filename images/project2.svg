@@ -1,0 +1,56 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="400" height="250" viewBox="0 0 400 250">
+  <defs>
+    <linearGradient id="bg2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#667eea;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#764ba2;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="400" height="250" fill="url(#bg2)"/>
+  
+  <!-- AI Brain -->
+  <g transform="translate(160, 60)">
+    <ellipse cx="40" cy="40" rx="35" ry="30" fill="rgba(255,255,255,0.9)"/>
+    <ellipse cx="40" cy="40" rx="25" ry="20" fill="rgba(255,255,255,0.7)"/>
+    
+    <!-- Neural connections -->
+    <g stroke="rgba(255,255,255,0.8)" stroke-width="1.5" fill="none">
+      <circle cx="25" cy="25" r="3" fill="rgba(255,255,255,0.8)"/>
+      <circle cx="55" cy="25" r="3" fill="rgba(255,255,255,0.8)"/>
+      <circle cx="25" cy="55" r="3" fill="rgba(255,255,255,0.8)"/>
+      <circle cx="55" cy="55" r="3" fill="rgba(255,255,255,0.8)"/>
+      <circle cx="40" cy="40" r="3" fill="rgba(255,255,255,0.8)"/>
+      
+      <line x1="25" y1="25" x2="40" y2="40"/>
+      <line x1="55" y1="25" x2="40" y2="40"/>
+      <line x1="25" y1="55" x2="40" y2="40"/>
+      <line x1="55" y1="55" x2="40" y2="40"/>
+    </g>
+  </g>
+  
+  <!-- Text Generation Animation -->
+  <g transform="translate(50, 150)">
+    <rect x="0" y="0" width="300" height="60" rx="8" fill="rgba(255,255,255,0.9)"/>
+    <rect x="10" y="10" width="280" height="40" rx="4" fill="rgba(255,255,255,0.7)"/>
+    
+    <!-- Text lines -->
+    <rect x="20" y="20" width="200" height="4" fill="rgba(102,126,234,0.7)"/>
+    <rect x="20" y="30" width="150" height="4" fill="rgba(102,126,234,0.5)"/>
+    <rect x="20" y="40" width="180" height="4" fill="rgba(102,126,234,0.3)"/>
+  </g>
+  
+  <!-- LLM Icons -->
+  <g transform="translate(320, 100)">
+    <circle cx="0" cy="0" r="20" fill="rgba(255,255,255,0.9)"/>
+    <text x="0" y="5" text-anchor="middle" fill="#667eea" font-family="Arial, sans-serif" font-size="16" font-weight="bold">AI</text>
+  </g>
+  
+  <!-- Title -->
+  <text x="200" y="30" text-anchor="middle" fill="white" font-family="Arial, sans-serif" font-size="18" font-weight="bold">
+    GenAI Product Copy
+  </text>
+  <text x="200" y="230" text-anchor="middle" fill="rgba(255,255,255,0.8)" font-family="Arial, sans-serif" font-size="14">
+    Automated Content Generation with LLMs
+  </text>
+</svg>
